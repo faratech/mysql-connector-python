@@ -494,7 +494,7 @@ class MySQLTCPSocketTests(tests.MySQLConnectorTests):
 
     @unittest.skipIf(
         not tests.SSL_AVAILABLE,
-        "Could not test SSL context. Make sure Python supports SSL.",
+        "Could not test SSL context. Make sure Python supports OpenSSL.",
     )
     def test_build_ssl_context_tls_versions(self):
         """Restrict the SSL context to the requested TLS versions"""
